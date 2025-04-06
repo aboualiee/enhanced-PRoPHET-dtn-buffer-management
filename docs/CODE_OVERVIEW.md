@@ -52,6 +52,23 @@ To use these drop policies in the ONE Simulator, you need to:
 
 Where [PolicyName] is one of: MOFODropPolicy, DLADropPolicy, DLDropPolicy, or FIFODropPolicy
 
+## Buffer Management Algorithm Flowchart
+
+A detailed flowchart illustrating the buffer management algorithm is available in the `/results/visualization/Flowchart_of_Buffer_Management_Algorithm.png`. 
+
+The flowchart provides a visual representation of the decision-making process for buffer management, showing:
+- How new messages are evaluated for buffer space
+- The logic for determining when to drop messages
+- The process of selecting and applying the appropriate drop policy
+
+Key steps depicted in the flowchart include:
+1. Checking if the new message exceeds the total buffer size
+2. Determining available free space
+3. Applying specific drop policies when space is insufficient
+4. Continuing to drop messages until enough space is available
+
+The flowchart complements the `makeRoomForMessage()` method implementation, offering a clear visual explanation of the buffer management algorithm's logic.
+
 ## Note on Buffer Management Algorithm
 
 The core of each buffer management technique is implemented in the `makeRoomForMessage()` method, which:
