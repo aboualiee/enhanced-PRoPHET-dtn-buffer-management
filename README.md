@@ -39,7 +39,11 @@ The project extends the ONE (Opportunistic Network Environment) Simulator with c
 - `FIFODropPolicy.java`: First In First Out drop policy
 
 ### Buffer Management Algorithm Visualization
-A comprehensive flowchart is provided in `/results/visualization/Flowchart_of_Buffer_Management_Algorithm.png` to illustrate the decision-making process of the buffer management algorithm. This visual representation helps understand:
+A comprehensive flowchart illustrating the buffer management algorithm is available in the repository.
+
+![Buffer Management Algorithm Flowchart](./results/visualization/Flowchart_of_Buffer_Management_Algorithm.png)
+
+This visual representation helps understand:
 - How new messages are evaluated for buffer space
 - The logic for determining message dropping
 - The selection and application of drop policies

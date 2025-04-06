@@ -54,12 +54,15 @@ Where [PolicyName] is one of: MOFODropPolicy, DLADropPolicy, DLDropPolicy, or FI
 
 ## Buffer Management Algorithm Flowchart
 
-A detailed flowchart illustrating the buffer management algorithm is available in the `/results/visualization/Flowchart_of_Buffer_Management_Algorithm.png`. 
+A detailed flowchart illustrating the buffer management algorithm is available in the repository at `results/visualization/Flowchart_of_Buffer_Management_Algorithm.png`.
+
+![Buffer Management Algorithm Flowchart](./results/visualization/Flowchart_of_Buffer_Management_Algorithm.png)
 
 The flowchart provides a visual representation of the decision-making process for buffer management, showing:
 - How new messages are evaluated for buffer space
 - The logic for determining when to drop messages
 - The process of selecting and applying the appropriate drop policy
+- Step-by-step flow of buffer management constraints
 
 Key steps depicted in the flowchart include:
 1. Checking if the new message exceeds the total buffer size
