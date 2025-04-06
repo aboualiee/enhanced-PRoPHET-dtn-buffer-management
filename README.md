@@ -38,6 +38,15 @@ The project extends the ONE (Opportunistic Network Environment) Simulator with c
 - `DLDropPolicy.java`: Drop Last drop policy
 - `FIFODropPolicy.java`: First In First Out drop policy
 
+### Buffer Management Algorithm Visualization
+A comprehensive flowchart is provided in `/results/visualization/Flowchart_of_Buffer_Management_Algorithm.png` to illustrate the decision-making process of the buffer management algorithm. This visual representation helps understand:
+- How new messages are evaluated for buffer space
+- The logic for determining message dropping
+- The selection and application of drop policies
+- The step-by-step process of managing buffer constraints
+
+The flowchart provides an intuitive overview of the complex buffer management logic implemented in the custom drop policy classes.
+
 ## Key Findings
 - Increasing buffer size improves delivery probability and reduces overhead ratio across all techniques
 - Increasing buffer size negatively affects latency average
@@ -56,12 +65,18 @@ The project extends the ONE (Opportunistic Network Environment) Simulator with c
 1. Install the ONE Simulator v1.6.0
 2. Copy the buffer management classes to the simulator's source directory
 3. Configure the simulator using the sample configuration files
-4. Run simulations with varying buffer sizes
+4. Run simulations with varying buffer 
 
 ## Repository Structure
 This repository maintains its original structure from 2021 for academic integrity purposes. The file organization is as follows:
 
-- Root directory - Contains the original buffer management Java files
+- Root directory contains:
+  - Original buffer management Java files:
+    - `DropPolicy.java`
+    - `MOFODropPolicy.java`
+    - `DLADropPolicy.java`
+    - `DLDropPolicy.java`
+    - `FIFODropPolicy.java`
 - `/docs` - Additional documentation about the buffer management techniques and installation guides
 - `/config` - Information about ONE simulator configuration
 - `/results` - Performance analysis and visualization
